@@ -1,0 +1,101 @@
+/*
+Theme Name: WordPress
+Author: Chern Hee
+Version: 1.0
+*/
+
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+a:link,
+a:visited {
+	color: green;
+}
+p {
+	line-height: 1.65em;
+}
+
+
+/*overview layout*/
+div.container{
+	max-width:920px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+article.post{
+	border-bottom: 1px dotted #bbbbbb;
+}
+article.post:last-of-type{
+	border-bottom: none;
+}
+
+/*Header*/
+.site-header {
+	border-bottom: 2px solid #999;
+}
+
+/*Footer*/
+.site-footer{
+	margin-top: 25px;
+	border-top: 2px solid #999;
+}
+
+/*Navigation Menus*/
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav ul:before, .site-nav ul:after { content: ""; display: table;}
+.site-nav ul:after { clear:both;}
+.site-nav ul{ *zoom: 1;}
+/*makes into a menu bar*/
+.site-nav ul li{ 
+
+list-style:none;
+float:left;
+}
+
+/*Site Header Menu*/
+.site-header nav ul li {
+	margin-right: 5px;
+}
+
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited{
+	display:block;
+	padding: 7px 15px;
+	border : 0.5px solid green;
+	border-bottom: none;
+	text-decoration: none;
+}
+
+/*highlights menu item hovered upon*/
+.site-header nav ul li a:hover{
+	background-color: #DBA901;
+}
+
+/*makes menu highlight stay*/
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited{
+	background-color: #DBA901;
+	color:solid green;
+}
+
+/*Footer Menu*/
+.site-footer nav ul li{
+	margin-right:10px;
+	padding-right:10px;
+	border-right: solid 1px;
+}
+
+/*Page Layout*/
+article.page h2{
+	
+	font-size: 100%;
+}
